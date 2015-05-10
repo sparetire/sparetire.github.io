@@ -1,2 +1,19 @@
+# Site settings
+title: Sparetire's Blog
+header-img: img/home-bg.jpg
+email: s9ar371r3@gmail.com
+description: "一个菜狗的碎碎念"
+baseurl: 
+url: "http://www.spartire.me"
+twitter_username: Sparetire_
+github_username:  sparetire
+facebook_username:  IronSummitMedia
+timezone: Asia/Taipei
 encoding: utf-8
-baseurl: /
+
+# Build settings
+markdown: kramdown
+highlighter: pygments
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

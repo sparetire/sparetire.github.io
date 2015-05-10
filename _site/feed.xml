@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sparetire's Blog</title>
+    <description>一个菜狗的碎碎念</description>
+    <link>http://www.spartire.me/</link>
+    <atom:link href="http://www.spartire.me/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 10 May 2015 23:33:48 +0800</pubDate>
+    <lastBuildDate>Sun, 10 May 2015 23:33:48 +0800</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hello Github Pages</title>
+        <description>&lt;p&gt;博客终于弄好了，不过用了英文主题看起来总是有些奇怪。。中文和英文夹杂，这字体也不太搭调，原谅我的审美吧，先这样吧。今天母亲节，Bing 的主题不错。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 11 May 2015 07:13:00 +0800</pubDate>
+        <link>http://www.spartire.me/2015/05/11/Hello-Github-Pages/</link>
+        <guid isPermaLink="true">http://www.spartire.me/2015/05/11/Hello-Github-Pages/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
