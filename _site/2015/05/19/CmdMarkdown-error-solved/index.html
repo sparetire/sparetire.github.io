@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="一个菜狗的碎碎念">
 
-    <title>Sparetire's Blog</title>
+    <title>error while loading shared libraries: libudev.so.0 解决 - Sparetire's Blog</title>
 
-    <link rel="canonical" href="http://www.spartire.me/">
+    <link rel="canonical" href="http://www.spartire.me/2015/05/19/CmdMarkdown-error-solved/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -75,63 +75,59 @@
 </nav>
 
 
-    <!-- Page Header -->
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
+    <!-- Post Header -->
+<header class="intro-header" style="background-image: url('/img/TrueFalse.jpg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Sparetire's Blog</h1>
-                    <hr class="small">
-                    <span class="subheading">I want to be a warlock.</span>
+                <div class="post-heading">
+                    <h1>error while loading shared libraries: libudev.so.0 解决</h1>
+                    
+                    <span class="meta">Posted by Sparetire on May 19, 2015</span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			
-<div class="post-preview">
-    <a href="/2015/05/19/True-and-False/">
-        <h2 class="post-title">            对或错很重要
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Sparetire on May 19, 2015</p>
-</div>
-<hr>
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-<div class="post-preview">
-    <a href="/2015/05/19/CmdMarkdown-error-solved/">
-        <h2 class="post-title">            error while loading shared libraries: libudev.so.0 解决
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Sparetire on May 19, 2015</p>
-</div>
-<hr>
+				<p>刚在 Ubuntu 64 下下好 Cmd Markdown 客户端，运行出现错误</p>
 
-<div class="post-preview">
-    <a href="/2015/05/11/Hello-Github-Pages/">
-        <h2 class="post-title">            Hello Github Pages
-        </h2>
-        
-    </a>
-    <p class="post-meta">Posted by Sparetire on May 11, 2015</p>
-</div>
-<hr>
+<pre><code>lusir@FUCKGFW:~/Downloads/cmd_markdown_linux64$ error while loading shared libraries: libudev.so.0: cannot open shared object file: No such file or directory.
+</code></pre>
+
+<p>看起来似乎没找到 libudev.so.0 这个动态链接库，查了下做个软连接搞定</p>
+
+<pre><code>sudo ln -s /lib/x86_64-linux-gnu/libudev.so.1 /lib/x86_64-linux-gnu/libudev.so.0
+</code></pre>
+
+<p>顺手记下</p>
 
 
-<!-- Pager -->
+                <hr>
 
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2015/05/11/Hello-Github-Pages/" data-toggle="tooltip" data-placement="top" title="Hello Github Pages">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/2015/05/19/True-and-False/" data-toggle="tooltip" data-placement="top" title="对或错很重要">Next Post &rarr;</a>
+                    </li>
+                    
+                </ul>
 
-		</div>
-	</div>
-</div>
+            </div>
+        </div>
+    </div>
+</article>
 
 <hr>
 
